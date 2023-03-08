@@ -7,15 +7,15 @@
     <title>Responsive Layout</title>
 </head>
 <body>
-    <main>
+    <div class="wrapper">
         <header class="main-head">
             <div class="navbar">
                 <h1>Student Name</h1>
                 <nav class="navigation">
                     <ul>
-                        <li>Home</li>
-                        <li>Portfolio</li>
-                        <li>Contact</li>
+                        <a href="#"><li>Home</li></a>
+                        <a href="#"><li>Portfolio</li></a>
+                        <a href="#"><li>Contact</li></a>
                     </ul>
                 </nav>
             </div>
@@ -27,8 +27,45 @@
                     <p>Hi! I'm a fron-end developer who loves responsive design and css. I recently finished a degree in front-end web development at Treehouse and am excited to put all my skills to use!</p>
                 </div>
             </section>
-            
         </header>
-    </main>
+        <main class="portfolio">
+            <section class="portfolio-projects">
+                <h2 class="portfolio-heading">Portfolio</h2>
+                <article class="portfolio-article-1">
+                    <img src="responsive_layout_v3/images/portfolio-1.png" alt="image of a marketing project">
+                    <h3>Marketing Page</h3>
+                    <p class="portfolio-text">This project shows the front page of a marketing website meant for a specific business I'm interested in.</p>
+                </article>
+                <article class="portfolio-article-2">
+                    <img src="responsive_layout_v3/images/portfolio-2.png" alt="image of a search project">
+                    <h3>Search Page</h3>
+                    <p class="portfolio-text">This project searches through a specifc database to find information that the user is trying to look up.</p>
+                </article>
+                <article class="portfolio-article-3">
+                    <img src="responsive_layout_v3/images/portfolio-3.png" alt="image of a travel app project">
+                    <h3>Travel App</h3>
+                    <p class="portfolio-text">This project compares travel times based on different transportation methods and tells you the best one.</p>
+                </article>
+                <article class="portfolio-article-4">
+                    <img src="responsive_layout_v3/images/portfolio-4.png" alt="image of a api project">
+                    <h3>Map of Favorite Spots</h3>
+                    <p class="portfolio-text">This project uses mapping apis to plot points for my favorite spots in the city for a do-it-yourself walking tour.</p>
+                </article>
+                <article class="portfolio-article-5">
+                    <img src="responsive_layout_v3/images/portfolio-5.png" alt="image of a photo gallery project">
+                    <h3>Photo Gallery</h3>
+                    <p class="portfolio-text">This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photos.</p>
+                </article>
+                <article class="portfolio-article-6">
+                    <img src="responsive_layout_v3/images/portfolio-6.png" alt="image of a calculator project">
+                    <h3>Calculator</h3>
+                    <p class="portfolio-text">Someone can enter in the numbers they want, and press the big blue button and get the result.</p>
+                </article>
+            </section>
+            <section class="contact">
+                
+            </section>
+        </main>
+    </div>
 </body>
 </html>
