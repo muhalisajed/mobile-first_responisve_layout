@@ -1,0 +1,8 @@
+:root {
+    /* Helps font scale smoothly as the browser scales 
+        0.5em acts as a minimum font size
+        1vw adds the responsive scaling factor
+    */
+    font-size: calc(0.5em + 1vw);
+    --main-font: 'Montserrat', sans-serif;
+}
