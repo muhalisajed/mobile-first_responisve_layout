@@ -9,3 +9,7 @@
     font-size: calc(0.5em + 1vw);
     --main-font: 'Montserrat', sans-serif;
 }
+/* Fixes IE bug that renders main as an inline element */
+main {
+    display: block;
+}
