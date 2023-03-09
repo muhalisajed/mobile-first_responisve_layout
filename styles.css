@@ -1,3 +1,6 @@
+/* The advanced css in this project was made possible from studying CSS in Depth by Keith J. Grant */
+
+/* :root Means the entire page */
 :root {
     /* Helps font scale smoothly as the browser scales 
         0.5em acts as a minimum font size
