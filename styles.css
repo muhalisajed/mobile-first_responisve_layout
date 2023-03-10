@@ -1,6 +1,8 @@
 /* The advanced css in this project was made possible from studying CSS in Depth by Keith J. Grant */
 
-/* :root Means the entire page */
+/* :root Means the entire page (Grant, 2018) */
+
+/* box-sizing: border-box; sets the combined size of the content, padding, and border (Grant, 2018). Padding will no longer affect the height and width */
 :root {
     /* Helps font scale smoothly as the browser scales 
         0.5em acts as a minimum font size
@@ -8,8 +10,73 @@
     */
     font-size: calc(0.5em + 1vw);
     --main-font: 'Montserrat', sans-serif;
+    box-sizing: border-box;
 }
-/* Fixes IE bug that renders main as an inline element */
+
+/* Universal */
+
+*,
+::before,
+::after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: gainsboro;
+    margin: 0;
+    min-height: 100vh;
+    font-family: var(--main-font);
+}
+
+.wrapper {
+    max-width: 1080px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+li {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Header */
+div.header-navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+h1, .header-navigation {
+   
+}
+.header-navigation a > li {
+    background-color: white;
+    padding: 1em 5em;
+    margin: .5em;
+    
+}
+
+.profile-img {
+    width: 300px;
+    height: auto;
+}
+
+/* Main */
+.portfolio {
+    margin: 0 auto;
+}
+
+/* Fixes IE bug that renders main as an inline element (Grant, 2018) */
 main {
     display: block;
 }
+
+article > img {
+    width: 350px;
+    height: auto;
+}
+
+/* Footer */
