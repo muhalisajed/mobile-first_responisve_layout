@@ -8,17 +8,18 @@
         0.5em acts as a minimum font size
         1vw adds the responsive scaling factor
     */
-    font-size: calc(0.5em + 1vw);
+    font-size: calc(0.7em + 1vw);
     --main-font: 'Montserrat', sans-serif;
     box-sizing: border-box;
 }
 
-/* Universal */
+/* Global */
 
 *,
 ::before,
 ::after {
     box-sizing: inherit;
+    margin-top: 1em;
 }
 
 body {
@@ -40,38 +41,59 @@ li {
 a {
     text-decoration: none;
     color: black;
+    font-weight: bold;
+}
+
+h3 {
+    font-weight: lighter;
+}
+
+.hero-text, 
+.portfolio-text, 
+.contact-text {
+    padding: 0 2.5em;
+    line-height: 1.5em;
 }
 
 /* Header */
+header {
+    margin-bottom: 3em;
+}
+
 div.header-navbar {
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
 }
-h1, .header-navigation {
-   
-}
+
 .header-navigation a > li {
     background-color: white;
-    padding: 1em 5em;
+    padding: 1em 1em;
     margin: .5em;
-    
+}
+ul {
+    padding: 0;
 }
 
 .profile-img {
-    width: 300px;
+    width: 175px;
     height: auto;
 }
 
+
+
 /* Main */
-.portfolio {
-    margin: 0 auto;
-}
 
 /* Fixes IE bug that renders main as an inline element (Grant, 2018) */
 main {
     display: block;
+    background-color: white;
+    padding: 2em 0;
+}
+
+.portfolio {
+    margin: 0 auto;
 }
 
 article > img {
@@ -79,4 +101,30 @@ article > img {
     height: auto;
 }
 
+/* Contact Form */
+.contact {
+    margin: 3em 0;
+}
+.contact-header {
+    font-weight: bold;
+}
+.contact-text {
+    margin: 1.5em 0;
+}
+.contact-info {
+    letter-spacing: .1rem;
+}
+strong {
+    margin-left: .5em;
+}
+
 /* Footer */
+.footer-navigation {
+    display: none;
+}
+.footer-navbar {
+    display: flex;
+    justify-content: space-between;
+    margin: 1em 1em;
+    border-top: 1px solid rgb(208, 208, 208);
+}
