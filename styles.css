@@ -128,3 +128,27 @@ strong {
     margin: 1em 1em;
     border-top: 1px solid rgb(208, 208, 208);
 }
+/* Tablet */
+@media screen and (min-width: 768px) {
+/* Header */
+.header-navigation a {
+    display: inline-block;
+    margin-top: 0;
+}
+.header-navigation a > li {
+    background-color: transparent;
+}
+
+/* Main */
+
+/* Footer */
+    
+}
+/* Desktop */
+@media screen (mid-width: 1024px) {
+/* Header */
+
+/* Main */
+
+/* Footer */
+}
