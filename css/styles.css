@@ -43,7 +43,10 @@ a {
     color: black;
     font-weight: bold;
 }
-
+h1,
+h2{
+    color: #482728;
+}
 h3 {
     font-weight: lighter;
 }
@@ -69,7 +72,7 @@ div.header-navbar {
 
 .header-navigation li {
     background-color: white;
-    padding: 1em 1em;
+    padding: 1em;
     margin: .5em;
 }
 ul {
@@ -101,7 +104,18 @@ article > img {
     height: auto;
 }
 /* Challenges Completed */
-
+.challenges {
+    background-color: #482728;
+    padding: 2em;
+    color: #E6C229;
+}
+.challenges h3 {
+    font-weight: bold;
+}
+.challenges-list li {
+    list-style-type: trad-chinese-informal;
+    list-style-position: inside;
+}
 
 /* Contact Form */
 .contact {
@@ -142,6 +156,7 @@ strong {
 .header-navigation li {
     display: inline-block;
     margin-top: 0;
+    padding: 0;
 }
 .header-navigation li {
     background-color: transparent;
@@ -187,6 +202,16 @@ article img {
 .portfolio-text {
     padding: 0;
 }
+
+/* Challenges Completed */
+.challenges-list {
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+}
+
+
+/* Contact */
 .contact-text {
     padding: 0 6em;
 }
