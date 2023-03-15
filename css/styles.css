@@ -67,7 +67,7 @@ div.header-navbar {
     text-align: center;
 }
 
-.header-navigation a > li {
+.header-navigation li {
     background-color: white;
     padding: 1em 1em;
     margin: .5em;
@@ -100,6 +100,8 @@ article > img {
     width: 375px;
     height: auto;
 }
+/* Challenges Completed */
+
 
 /* Contact Form */
 .contact {
@@ -128,18 +130,20 @@ strong {
     margin: 1em 1em;
     border-top: 1px solid rgb(208, 208, 208);
 }
-
+.footer-navbar h3 {
+    font-weight: bold;
+}
 /* Tablet */
 @media screen and (min-width: 768px) {
 /* Header */
 .header-navigation, .nav-links, .hero {
     margin-top: 0;
 }
-.header-navigation a {
+.header-navigation li {
     display: inline-block;
     margin-top: 0;
 }
-.header-navigation a > li {
+.header-navigation li {
     background-color: transparent;
 }
 
@@ -165,16 +169,20 @@ h2 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
+}
+article img {
+    width: 350px;
 }
 .portfolio-article-1, 
 .portfolio-article-3, 
 .portfolio-article-5 {
-    max-width: 50%;
+    max-width: 48%;
 }
 .portfolio-article-2, 
 .portfolio-article-4, 
 .portfolio-article-6 {
-   max-width: 50%;
+   max-width: 48%;
 }
 .portfolio-text {
     padding: 0;
@@ -213,14 +221,20 @@ div.header-navbar {
 h1 {
     margin: 0;
 }
-.nav-links {
+.nav-links{
+    display: flex;
+    gap: 2em;
     margin-bottom: 0;
+}
+
+ul.nav-links li {
+    margin: 0;
 }
 ul.nav-links a > li {
     margin-right: 0;
 }
 .hero-text {
-    padding: 0 3em 0 0;
+    padding: 0 4em 0 0;
 }
 .profile-img {
     width: 400px;
@@ -231,7 +245,7 @@ ul.nav-links a > li {
     margin: 1em;
 }
 .wrapper {
-    max-width: 1024px;
+    max-width: 1300px;
    
 }
 .portfolio-projects {
@@ -239,7 +253,7 @@ ul.nav-links a > li {
 }
 
 article {
-    font-size: 0.65rem;
+    font-size: 0.75rem;
 }
 article img {
     width: 300px;
@@ -260,8 +274,12 @@ article img {
    max-width: 30%;
 }
 
-/* Footer */
-.footer-navigation {
-    
+/* Contact */
+.contact-text {
+    padding-left: 13em;
+    padding-right: 13em;
 }
+
+/* Footer */
+
 }
