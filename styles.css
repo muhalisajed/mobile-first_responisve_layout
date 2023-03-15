@@ -8,7 +8,7 @@
         0.5em acts as a minimum font size
         1vw adds the responsive scaling factor
     */
-    font-size: calc(0.6em + 1vw);
+    font-size: calc(0.5em + 1vw);
     --main-font: 'Montserrat', sans-serif;
     box-sizing: border-box;
 }
@@ -128,6 +128,7 @@ strong {
     margin: 1em 1em;
     border-top: 1px solid rgb(208, 208, 208);
 }
+
 /* Tablet */
 @media screen and (min-width: 768px) {
 /* Header */
@@ -152,8 +153,12 @@ strong {
 }
 
 /* Main */
+h2 {
+    margin-top: 0;
+}
+
 .portfolio {
-    padding: 2em 1em;
+    padding: 3em 2em;
 }
 
 .portfolio-projects {
@@ -194,11 +199,69 @@ strong {
 .btt {
     display: none;
 }
-/* Desktop */
-@media screen and (mid-width: 1024px) {
-/* Header */
 
+}
+/* Desktop */
+@media screen and (min-width: 1024px) {
+/* Header */
+div.header-navbar {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+}
+h1 {
+    margin: 0;
+}
+.nav-links {
+    margin-bottom: 0;
+}
+ul.nav-links a > li {
+    margin-right: 0;
+}
+.hero-text {
+    padding: 0 3em 0 0;
+}
+.profile-img {
+    width: 400px;
+    height: auto;
+}
 /* Main */
+.container {
+    margin: 1em;
+}
+.wrapper {
+    max-width: 1024px;
+   
+}
+.portfolio-projects {
+    justify-content: space-between;
+}
+
+article {
+    font-size: 0.65rem;
+}
+article img {
+    width: 300px;
+    height: auto;
+}
+.portfolio-text {
+    padding: 0 1em;
+}
+
+.portfolio-article-1, 
+.portfolio-article-3, 
+.portfolio-article-5 {
+    max-width: 30%;
+}
+.portfolio-article-2, 
+.portfolio-article-4, 
+.portfolio-article-6 {
+   max-width: 30%;
+}
 
 /* Footer */
+.footer-navigation {
+    
+}
 }
